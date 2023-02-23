@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+class computer{
+public:
+    void use(){
+        cout <<"A computer can be used to access information on the internet\n";
+    }
+
+
+};
+
+class client : public computer{
+public:
+    void location(){
+        cout <<"client machine is located on the local area network\n";
+    }
+};
+class server : public computer{
+    public:
+    void access(){
+        cout <<"To access a server you need an internet connection\n";
+    }
+};
+
+
+int main()
+{
+computer hp;
+hp.use();
+client proxy;
+proxy.location();
+server apache;
+apache.access();
+    return 0;
+}
