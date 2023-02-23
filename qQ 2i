@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class person{
+public:
+};
+
+class student:public person{
+   public:
+       string institution = "Moi university";
+       int year = 2;
+       string regNum = "ABC876-0067/2019";
+       };
+
+int main(){
+student myobj;
+myobj.institution;
+myobj.year;
+myobj.regNum;
+
+cout<<"Institution: "<<myobj.institution<<"\n";
+cout<<"Year of study: "<<myobj.year<<" year\n";
+cout<<"Registration Number: "<<myobj.regNum;
+return 0;
+}
